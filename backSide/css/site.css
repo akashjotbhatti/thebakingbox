@@ -1,0 +1,276 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: #ccbca5;
+}
+.successful {
+	position: absolute;
+	bottom: 0;
+	left: 80px;
+	padding: 10px;  
+	background: #8FBC8F;
+	color: white;
+}
+.error {
+	position: absolute;
+	bottom: 0;
+	left: 80px;
+	padding: 10px; 
+	background: #CD5C5C; 
+	color: white;
+}
+h1 {
+	margin-left: 80px;
+	color: #e3e4e7;
+}
+.addBtn {
+	text-decoration: none;
+	font-family: 'Poppins', sans-serif;
+	display: inline-block;
+	margin: 4px;
+	padding: 6px;
+	background: #98d3e1;
+	color: white;
+	border: none;
+	border-radius: 100px;
+	margin-left: 80px;
+}
+.addBtn:hover {
+	background: #e06287;
+	opacity: 1;
+}
+.header {
+	text-transform: uppercase;
+	color: #e3e4e7;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+.update {
+	position: relative;
+	top: -4px;
+	left: 780px;
+}
+.delete {
+	position: relative;
+	top: -30px;
+	left: 1030px;
+}
+.name {
+	padding-left: 280px;
+	height: 4px;
+}
+.detail h2 {
+	position: relative;
+	left: 270px;
+	top: -20px;
+	color: white;
+	font-size: 20px;
+	line-height: 4px;
+}
+.editBtn i {
+	color: white;
+}
+.editBtn {
+	position: relative;
+	left: 800px;
+	top: -30px;
+}
+.editBtn i:hover {
+	color: #e06287;
+}
+.deleteBtn i {
+	color: white;
+}	
+.deleteBtn {
+	position: relative;
+	left: 1050px;
+	top: -55px;
+}
+.deleteBtn i:hover {
+	color:  #e06287;
+}
+form {
+	transform: translateX(100px);
+	padding: 16px 0;
+	background-color: #ccbca5;
+}
+#save, #reset, #cancel {
+	font-family: 'Poppins', sans-serif;
+	display: inline-block;
+	margin: 20px 4px;
+	padding: 6px;
+	background: #98d3e1;
+	color: white;
+	border: none;
+	border-radius: 100px;
+}
+#save:hover {
+	background: #e06287;
+}#reset:hover {
+	background: #e06287;
+}
+#cancel:hover {
+	background: #e06287;
+}
+/* login form */
+html, input, textarea {
+	font-family: 'Poppins', sans-serif;
+}
+body#login {
+	background-color: #ccbca5;
+}
+.wrapper {
+	width: 90%;
+	height: 100vh;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.form-container {
+	width: 100%;
+	max-width: 400px;
+	background-color: white;
+	position: relative;
+	padding: 100px 0;
+	border-radius: 10px;
+	z-index: 1;
+}
+.form-container::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 200px;
+	background: #98d3e1;
+	border-bottom-left-radius: 100%;
+	border-bottom-right-radius: 100%;
+	z-index: -1;
+}
+.form-heading {
+	color: white;
+	font-size: 30px;
+	position: absolute;
+	top: 34px;
+	left: 100px;
+}
+form#loginForm {
+	background-color: white;
+	border-radius: 10px;
+	box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+}
+.input-group {
+	width: 90%;
+	margin: 0 auto;
+	position: relative;
+	display: flex;
+	align-items: baseline;
+}
+.input-group input {
+	position: relative;
+	width: 100%;
+	padding: 10px 0;
+	margin-top: 8px;
+	border: none;
+	outline: none;
+	font-size: 18px;
+	color: #e06287;
+}
+.input-group > i {
+	font-size: 20px;
+	margin-right: 10px;
+	color: #e06287;
+}
+.input-group .bar {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.1);
+	width: 100%;
+	height: 1px;
+}
+.input-group .bar::before {
+	content: '';
+	position: absolute;
+	background-color: #e06287;
+	width: 0;
+	height: 2px;
+	transition: width 650ms;
+}
+.input-group input:focus + .bar::before {
+	width: 100%;
+}
+.input-group button {
+	margin: 30px auto;
+	padding: 10px 50px;
+	background: #98d3e1;
+	border: none;
+	color: white;
+	font-size: 28px;
+	border-radius: 30px;
+}
+.input-group button:focus,
+.input-group button:hover {
+	background: #e06287;
+}
+/* end of login */
+/* navigation */
+.navigation {
+	width: 100%;
+	height: 50px;
+}
+.navigation a {
+	text-decoration: none;
+	color: white;
+	font-family: 'Poppins', sans-serif;
+	margin: 0px 80px;
+	transition: opacity .5s ease;
+	position: relative;
+	top: 12px;
+}
+.active {
+	border-bottom: 2px solid white;
+}
+.logout a {
+	background-color: #98d3e1;
+	border-radius: 10px;
+	padding: 10px 20px;
+	text-decoration: none;
+	font-family: 'Poppins', sans-serif;
+	color: white;
+	position: absolute;
+	top: 12px;
+	right: 80px;
+	transition: opacity .5s ease;
+}
+a:hover {
+	opacity: .5;
+}
+/* end of navigation */
+/* dashboard */
+.dash {
+	text-align: center;
+}
+.dash h1 {
+	margin: 50px;
+	color: white;
+}
+.dash a {
+	text-decoration: none;
+	color: #ccbca5;
+}
+.product_types, .products, .users, .orders {
+	width: 200px;
+	height: 200px;
+	background-color: #e3e4e7;
+	border-radius: 10px;
+	display: inline-block;
+	margin-right: 20px;
+	padding-top: 90px;
+	text-transform: uppercase;
+}
+/* end of dashboard */
